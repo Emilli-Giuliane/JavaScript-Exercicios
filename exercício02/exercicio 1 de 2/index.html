@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super contador</title>
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+</head>
+<body>
+    <h1>Vamos Contar</h1>
+    <main>
+        <section class="mainSection">
+            <label for="inicio">Início: </label> <input id="inicio" type="number"><br>
+            <label for="fim">Fim: </label> <input id="fim" type="number"><br>
+            <label for="passo">Passo: </label> <input id="passo" type="number" min="0"><br>
+            <button id="contar">Contar</button>
+            <div id="contador">
+                <p id="esconderContando">Contando......</p>
+                <p id="mensagemErro">Impossível contar!</p>
+                <p id="paragrafoEscondido">Começando a contar do <span id="mostrarInicio"></span> e finalizando em <span id="mostrarFim"></span>. Pulando números de <span class="mostrarPasso"></span>. </p>
+                <p id="mostrarContagem">
+
+                </p>
+            </div>
+        </section>
+    </main>
+        <p>
+            layout criado por &copy;<em>CursoEmVídeo</em><br>
+            site recriado por <em>EmilliGiuliane</em>
+        </p>
+    <script src="script.js"></script>
+</body>
+</html>
