@@ -1,13 +1,14 @@
 let adicionar = document.querySelector('#adicionar')
-adicionar.addEventListener('click', function () {
-    document.querySelector('#resposta').innerHTML = ''
 
+adicionar.addEventListener('click', function () {
+    document.querySelector('#resposta').innerHTML = '' // Limpa o campo criado pelo botão "finalizar"
+    
     let valorNum = document.querySelector('#num').value
     let select = document.querySelector('select')
     let verifica = [] // esta variável verifica se existe um número igual no próprio vetor
     
     select.size = '10'
-
+    
     let novaOpcao = new Option(`Valor Salvo: ${valorNum}`, valorNum)
     
     for (let i = 1; i < select.length; i++) {
@@ -23,6 +24,9 @@ adicionar.addEventListener('click', function () {
     } else {
         select.add(novaOpcao)
     }
+    document.querySelector('#num').focus()
+    document.querySelector('#num').value = ''
+
 })
 
 let finalizar = document.querySelector('#finalizar')
